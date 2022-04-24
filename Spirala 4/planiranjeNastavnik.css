@@ -1,0 +1,64 @@
+body{
+   
+    background-image: url("slika.jpg");
+	background-position: top;
+
+}
+*{
+	box-sizing: border-box;
+}
+#okvir{
+  display: grid;
+  grid-template-columns:auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'nav '
+  'forma';
+  width: 100%;
+}
+.forma{
+    grid-area: forma;
+    text-align: center;
+    padding-top: 20px;
+
+}
+label{
+    color:lightgrey;
+    font-family: 'Teko';
+    font-size: 23px;
+    
+}
+.nav {
+  grid-area: nav;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  fieldset{
+      background-color:#333;
+  }
+  .potvrda{
+      background-color: whitesmoke;
+  }
+  
+  .validno {
+    background-color: #4dff4d;
+  }
+
+  .neValidno {
+    background-color: #ff4d4d;
+  }
+ 

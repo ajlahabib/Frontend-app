@@ -1,0 +1,114 @@
+body{
+    background-image: url("slika.jpg");
+	background-position: top;
+}
+*{
+	box-sizing: border-box;
+}
+#podnozje{
+    grid-area: podnozje;
+    
+}
+#okvir{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+	grid-template-areas: 
+	'logo nav nav nav nav nav nav nav'
+	'predmeti predmeti sedmice sedmice studenti studenti studenti studenti'
+    'podnozje podnozje podnozje podnozje podnozje podnozje podnozje podnozje ';
+    grid-gap: 5px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #okvir>div{
+	text-align: center;
+	font-size: 15px;
+    color: #f2f2f2;
+    background-color:#333;
+    padding: 5px;
+  
+}
+#logo{
+      grid-area: logo;
+      background-color: #333;
+}  
+#slika{
+        width: 64px;
+        height: 64px;
+ } 
+ #slika1{
+        width: 70px;
+        height: 70px;  
+}  
+#nav{
+      grid-area: nav;
+  }
+#nav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+#nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+#nav a:hover {
+    background-color: #ddd;
+    color: black;
+ }
+  #predmeti{
+      grid-area: predmeti;
+  }
+  #sedmice{
+      grid-area: sedmice;
+  }
+  #studenti{
+      grid-area: studenti;
+  }
+  li{
+      list-style: none;
+      font-size: 13px;
+  }
+  #tabela{
+    font-size: 13px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    
+  }
+  #tabela td {
+    border: 2px solid black;
+    color: rgb(200,207,216);
+  }
+  .photo{
+      width: 10%;
+  }
+  .podaci{
+      width: 30%;
+  }
+  .prisustvo{
+      width: 60%;
+  }
+  @media (max-width: 600px) {
+    #okvir{
+      grid-template-columns: auto;
+      grid-row: auto;
+      grid-template-areas:
+        "logo logo"
+        "nav nav"
+        "predmeti sedmice"
+        "studenti studenti"
+        "podnozje podnozje";
+      }
+  }
+ 
+  
+  

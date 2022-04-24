@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="planiranjeNastavnik.css">
+        <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+        <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Teko&display=swap" rel="stylesheet">
+        <script src="validacija.js"></script>
+        <script src="planiranjeNastavnik.js"></script>
+    </head>
+    <body>
+        <div id="okvir">
+        <nav>
+            <div class="nav">
+                <a href="">Početna <i class="fa fa-home" style="font-size:24px"></i></a>
+                <a href="raspored.html">Raspored <i class="fa fa-calendar" style="font-size:24px"></i></a>
+                <a href="planiranjeNastavnik.html">Nastavni plan <i class="fa fa-list" style="font-size:24px"></i></a>
+                <a href="podaciStudent.html">Podaci o studentu <i class=" fa fa-user" style="font-size:24px"></i></a>
+                <a href="posjecenost.html">Posjecenost <i class="fa fa-bar-chart" style="font-size:24px"></i> </a>
+                <a href="obavijesti.html">Obavijesti <i class="fa fa-bell"  style="font-size:24px" ></i></a>
+                <a href="#">Pretraži <i class="fa fa-search" style="font-size:24px"></i></a>
+        </div>
+            </nav>
+        <div class=forma>
+            <form>
+                <fieldset><br><br>
+                    <label>Naziv predmeta:&nbsp;&nbsp;</label>
+                        <input  type="text" name="NazivPredmeta" placeholder="Unesite naziv predmeta"><br>
+                    <br>
+                    <label>Tip:&nbsp;</label>
+                    <select name="Tip">
+                        <option value="Predavanja">Predavanja</option>
+                        <option value="Vjezbe">Vjezbe</option>
+                    </select><br><br>
+                
+                    <label>Vrijeme pocetka: </label>
+                        <input type="time" id="pt" name="VrijemePocetka" required>
+                    <br><br>
+                    <label>Vrijeme kraja: </label>
+                        <input type="time" id="tt" name="VrijemeKraja" required>
+                    <br><br>
+                    <label>Dan: </label>
+                    <select name="Dan">
+                        <option value="Pon">Ponedjeljak</option>
+                        <option value="Uto">Utorak</option>
+                        <option value="Sri">Srijeda</option>
+                        <option value="Cet">Cetvrtak</option>
+                        <option value="Pet">Petak</option>
+                    </select><br><br>
+                    <button class="potvrda">Potvrdi</button><br><br>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>

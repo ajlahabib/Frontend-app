@@ -1,0 +1,85 @@
+body{ 
+    background-image: url("slika.jpg");
+	background-position: top;
+}
+
+*{
+	box-sizing: border-box;
+}
+#okvir{
+  display: grid;
+  grid-template-columns:auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'nav '
+  'tabela';
+  width: 100%;
+}
+.nav {
+  grid-area: nav;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #tabela {
+    grid-area: tabela;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 40%;
+    margin-left: 35%;
+    margin-right: 30%;
+    margin-top: 5%;
+    width: 30%;
+    text-align: center;
+ 
+  }
+#tabela td {
+    border: 0.1px solid white;
+    padding: 8px;
+    color: rgb(200,207,216);
+  }
+  #tabela th {
+    border: 1px solid white;
+    padding: 8px;
+    width:30%;    
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:black;
+  color: white;
+  }
+ 
+#tabela tr {
+    background-color:#333;
+}
+#tabela tr:hover{
+        border:2px solid black;
+    
+}
+
+#prvi{
+ padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:black;
+  color: white;
+  width: 30%;
+}
+
+
+ 
+ 

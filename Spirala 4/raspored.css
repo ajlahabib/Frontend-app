@@ -1,0 +1,135 @@
+body{ 
+ background-image: url("slika.jpg");
+background-position: top;
+}
+*{
+	box-sizing: border-box;
+}
+#okvir{
+  display: grid;
+  grid-template-columns:auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'nav'
+	'tabela';
+  width: 100%;
+}
+.nav{
+  grid-area: nav;
+}
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#tabl{
+  grid-area: tabela;
+}
+.tabela{
+  grid-area: tabela;
+    color:black;
+    width: 40%;
+    border-collapse:collapse;
+}
+
+.dot{
+  border-right: 2px dashed rgb(77, 75, 73);
+  background-color: rgb(207, 201, 201);
+
+  
+}
+.do{
+  border-right: 2px dashed  rgb(77, 75, 73);
+  background-color: rgb(207, 201, 201);
+
+}
+.kol{
+  border-right: 1.5px solid black;
+  background-color: rgb(207, 201, 201);
+
+ 
+}
+
+.boja{
+  background-color:rgb(200, 207, 216) ;
+  border-right: 1.5px solid black;
+ 
+}
+.boja2{
+  background-color:rgb(200, 207, 216) ;
+  border-right: 2px dashed rgb(77, 75, 73);
+ 
+}
+.boja3{
+  background-color:rgb(200, 207, 216);
+  border-right: 2px dashed rgb(77, 75, 73);
+ 
+}
+label{
+  font-size: 12px;
+}
+caption{
+ text-align: center;
+}
+p{
+  word-spacing: 9px;
+  font-size: 13px;
+  color:rgb(200, 207, 216) ;
+}
+.dani{
+  text-align: right;
+  color:rgb(200, 207, 216);
+  font-weight: normal;
+
+}
+td{
+  border-bottom: 1.5px solid black; ;
+}
+
+.trenutnaHorizontalno {
+  background-color:  #008080;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+/* 1 - puna, 0 - isprekidano */
+.trenutna11 {
+  border-left: 4px solid black;
+  border-right: 4px solid black;     
+}
+
+.trenutna10 {
+  border-left: 4px solid black;
+  border-right: 4px dashed black;    
+}
+
+.trenutna01 {
+  border-left: 4px dashed black;    
+  border-right: 4px solid black;
+}
+
+.trenutna00 {
+  border-left: 4px dashed black;    
+  border-right: 4px dashed black;    
+}
+
+tr {
+  float:inline-end;
+}
+#btn{
+  background-color:rgb(68, 125, 190);
+  color: black;
+}
+
